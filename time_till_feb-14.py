@@ -4,9 +4,11 @@ import datetime
 # pst = dateutil.tz.gettz('America/Los_Angeles')
 
 now = datetime.datetime.now()
-feb_14 = datetime.datetime(2025, 2, 14, 12)
+feb_14 = datetime.datetime(2025, 2, 14, 0)
 
-print(feb_14 - now)
+c = feb_14 - now
+
+print(c.total_seconds() / 60 / 60)
 
 
 
